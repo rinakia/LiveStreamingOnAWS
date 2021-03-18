@@ -38,7 +38,7 @@ r.a.createElement(E.a,{onClick
 
 r.a.createElement("p",null,"再生できない場合: ",
 r.a.createElement("a",{id:"live",href:awsExports.mediaLiveConsole,target:"_blank",rel
-:"noopener noreferrer"},"MediaLiveコンソール")," が「running」であることを確認してください。"),
+:"noopener noreferrer"},"MediaLiveの状態")," が「running」であることを確認してください。"),
 
 r.a.createElement("p",null,"Ref: ",
 r.a.createElement("a",{href
