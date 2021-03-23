@@ -20,7 +20,7 @@
 ### 目的
 本ソリューションにおいては、事前インストールの必要ないWebサーバを構築する方法を行う。
 
-WebサーバとしてはAmazon SimpleStorage Service (以下S3)を使用する。
+WebサーバとしてはAmazon Simple Storage Service (以下S3)を使用する。
 またS3へのアクセスはCloudFrontを用いることで、セキュリティと通信速度を向上させる。
 
 
@@ -41,6 +41,7 @@ WebサーバとしてはAmazon SimpleStorage Service (以下S3)を使用する�
 * hls_manifest: [MediaPackageをオリジンとしているCloudFrontのURL]
 
 S3を新規作成し、「DemoS3bucket」フォルダ内のファイル/フォルダを全てS3にアップロードする。
+ > Webコンソール画面にて実施する場合、複数回に分けてアップロードする必要がある...
 
 
 ### 2. CloudFront
