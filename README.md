@@ -9,6 +9,8 @@
 - [切分手順](#howto)
 - [著者](#author)
 
+<br>
+
 ## 課題と目的
 
 ### 課題
@@ -24,10 +26,12 @@
 WebサーバとしてはAmazon Simple Storage Service (以下S3)を使用する。
 またS3へのアクセスはCloudFrontを用いることで、セキュリティと通信速度を向上させる。
 
+<br>
 
 ## 構成図
 ![Architecture](architecture.png)
 
+<br>
 
 ## 構築手順
 
