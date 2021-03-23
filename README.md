@@ -6,6 +6,7 @@
 - [課題と目的](#purpose)
 - [構成図](#architecture-overview)
 - [構築手順](#howto)
+- [切分手順](#howto)
 - [著者](#author)
 
 ## 課題と目的
@@ -58,6 +59,27 @@ CloudFrontを新規作成し、オリジンとして作成したS3を選択す�
 http://[作成したCloudFrontのドメイン名]/index.html
 
 動画配信が行われている際に、「PreviewHLS」ボタンを選択すると視聴が開始されることを確認する。
+
+
+## 切分手順
+
+### 1. 配信開始後、OBSの状態がグリーンか
+  (エラー時)> Live, OBS間の設定が誤り
+
+### 2. MediaPackageのコンソール画面にてPlayで視聴できるか
+  (エラー時)> Live, Package間の設定が誤り
+
+### 3. MediaPackageのエンドポイントURLにて視聴ができるか(Safariのみ)
+
+### 4. CloudFront(MediaPackage側)のURLにて視聴ができるか(Safariのみ)
+  https://[CloudFrontドメイン名].cloudfront.net/out/v1/[MediaPacakgeエンドポイント]/index.m3u8
+  (エラー時)> Package, CloudFront間の設定が誤り
+
+### 5. CloudFront(S3側)のURLにてWebページが表示されるか
+  (エラー時)> S3,  CloudFront間の設定が誤り
+
+### 6. CloudFront(S3側)のURLにて視聴ができるか
+  (エラー時)> S3内のassetsファイルの設定が誤り
 
 
 ## 著者
