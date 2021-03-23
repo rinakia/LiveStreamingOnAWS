@@ -60,6 +60,8 @@ http://[作成したCloudFrontのドメイン名]/index.html
 
 動画配信が行われている際に、「PreviewHLS」ボタンを選択すると視聴が開始されることを確認する。
 
+<br>
+
 
 ## 切分手順
 
@@ -80,6 +82,8 @@ http://[作成したCloudFrontのドメイン名]/index.html
 
 ### 6. CloudFront(S3側)のURLにて視聴ができるか
   (エラー時)> S3内のassetsファイルの設定が誤り
+
+<br>
 
 
 ## 著者
